@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Introduccion JS</title>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Indicador de numero:</th>
+            <th>A-Z:</th>
+            <th>Suma de pares hasta 10:</th>
+            <th>Dia de la semana:</th>
+            <th>IMC (Indice masa corporal):</th>
+        </tr>
+        <tr>
+            <th>Ingresa cualquier numero: <input type="number" placeholder="X" autocomplete="off" id="numI" step="0.001"></th>
+            <th>Arreglo de letras
+                <select id="abc">
+                        <script>
+                            aBc();
+                        </script>
+                    </select></th>
+            <th>*Se imprime por consola
+                <script>
+                    sumaPares();
+                </script>
+            </th>
+            <th>Ingrese el numero del dia: <input type="number" placeholder="Numero de dia" autocomplete="off" id="numD" min="1" max="7" step="1"></th>
+            <th>Ingrese su peso: <input type="number" placeholder="Peso en Kg" autocomplete="off" id="Peso" step="0.1"></th>
+        </tr>
+        <tr>
+            <th>Tu numero ingresado fue: <input type="text" placeholder="Resultado" autocomplete="off" id="numR" disabled></th>
+            <th>*Se imprime por consola</th>
+            <th></th>
+            <th>El dia ingresado fue: <input type="text" placeholder="Dia ingresado" autocomplete="off" id="resD" disabled></th>
+            <th>Ingrese su estatura: <input type="number" placeholder="Estatura en metros" autocomplete="off" id="Estatura" step="0.1"></th>
+        </tr>
+        <tr>
+            <th><button onclick="indicadorNumero()"> Tipo de numero </button></th>
+            <th></th>
+            <th></th>
+            <th><button onclick="encontrarDia()"> Encuentre el dia ingresado </button></th>
+            <th>Su IMC es: <input type="number" placeholder="Resultado IMC" autocomplete="off" id="Imc" disabled></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><button onclick="indiceIMC()"> Calcule su IMC </button></th>
+        </tr>
+    </table>
+</body>
+
+</html>
